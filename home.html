@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #0f172a; /* navy blue */
+      line-height: 1.6;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: #ffffff;
+      padding: 20px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #2563eb;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      color: #2563eb;
+      font-size: 22px; /* medium size for heading */
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #0f172a;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 8px 18px;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #2563eb;
+      color: #ffffff;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100vh;
+      padding: 80px 60px;
+      background: #ffffff;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    /* Adjusted font size for medium display */
+    .hero-text h2 {
+      font-size: 28px; /* medium size, not too big */
+      font-weight: 600;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .hero-text h2 span {
+      font-size: 32px; /* slightly larger for emphasis */
+      font-weight: 700;
+      color: #2563eb;
+    }
+
+    /* Paragraph style */
+    .hero-text p {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #1e3a8a;
+    }
+
+    /* Space between paragraph and button */
+    .cta-button {
+      margin-top: 25px; /* vertical space */
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn.primary {
+      background: #2563eb;
+      color: #ffffff;
+    }
+
+    .btn.primary:hover {
+      background: #1d4ed8;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(37,99,235,0.35);
+    }
+
+    .hero-photo img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #2563eb;
+      box-shadow: 0 12px 25px rgba(37,99,235,0.3);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #2563eb;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      border-top: 2px solid #2563eb;
+      font-weight: 500;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .hero-text h2 {
+        font-size: 24px;
+      }
+
+      .hero-text h2 span {
+        font-size: 28px;
+      }
+
+      .cta-button {
+        justify-content: center;
+      }
+
+      .hero-photo {
+        margin-bottom: 40px;
+      }
+    }
+    .highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 70px 60px;
+    background: #ffffff;
+}
+
+.highlight-card {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-card i {
+    font-size: 32px;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.highlight-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.highlight-card p {
+    font-size: 15px;
+    color: #555;
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Sarnaya</h1>
+    <ul>
+      <li><a href="#home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <div class="hero-text">
+    <h2>Hello, I'm <span>Saranya Katta</span></h2>
+    <h2>BSC(Computers)</h2>
+    <p>Currently pursuing my Degree in Aditya Degree College, Amalapuram.</p>
+    <div class="cta-button">
+       <div class="cta-button">
+      <a href="saranyaresume.pdf" target="_blank" class="btn primary">Resume</a>
+    </div>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="c:\Users\apple\Downloads\saranya.jpg" alt="Profile Photo">
+  </div>
+</div>
+<section class="highlights">
+                <div class="highlight-card">
+                    <i class="highlight-web"></i>
+                    <h3>Web Development</h3>
+                    <p>I am a passionate Web Developer with a strong interest in creating clean, responsive, and user-friendly websites. 
+                        I enjoy turning ideas into real-world web applications using HTML, CSS, and basic JavaScript.
+                </div>
+                <div class="highlight-card">
+                    <i class="highlight-skills"></i>
+                    <h3>Programming Skills</h3>
+                    <p>I have a good foundation in programming concepts and problem-solving techniques.
+                         I am familiar with languages such as C and Python, and I understand core concepts 
+                         like variables, loops, conditions, functions, and basic data structures.
+                </div>
+                <div class="highlight-card">
+                    <i class="highlight-soft"></i>
+                    <h3>Soft Skills</h3>
+                    <p>I have strong communication and interpersonal skills, which help me work well with others and express ideas clearly. 
+                        I am a quick learner, adaptable to new environments, and open to feedback for continuous improvement.
+                </div>
+            </section> 
+
+<footer>
+  <p>© 2026 saranyakatta6@gmail.com. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
